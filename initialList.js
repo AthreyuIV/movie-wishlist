@@ -8,7 +8,7 @@ export const renderListInitial = () => {
             movieList.innerHTML += `
                 <section class="movie" id="movie">
                     <div class="movie-title">
-                        <h2><a href="./movieDetails.html">${data.Title}</a></h2>
+                        <h2>${data.Title}</h2>
                         <img class="box-image" src="${data.Poster}">
                     </div>
                 </section>
@@ -23,7 +23,7 @@ export const renderListInitial = () => {
             movieList.innerHTML += `
                 <section class="movie" id="movie">
                     <div class="movie-title">
-                        <h2><a href="./movieDetails.html">${data.Title}</a></h2>
+                        <h2>${data.Title}</h2>
                         <img class="box-image" src="${data.Poster}">
                     </div>
                 </section>
@@ -36,7 +36,7 @@ export const renderListInitial = () => {
             movieList.innerHTML += `
                 <section class="movie" id="movie">
                     <div class="movie-title">
-                        <h2 class="title"><a href="./movieDetails.html">${data.Title}</movieDetails></h2>
+                        <h2 class="title">${data.Title}</h2>
                         <img class="box-image" src="${data.Poster}">
                     </div>
                 </section>
