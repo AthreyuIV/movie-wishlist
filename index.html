@@ -9,14 +9,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <title>Movie Wishlist</title>
 </head>
-<header class="header">
-    <h1 class="utility-cont-1">Find Your Film</h1>
-    <p class="utility-cont-2">Search for movies</p>
-    <img class="header-image" src="./assets/header-image.png">
-</header>
-
 <body>
-    
+    <header class="header">
+        <h1 class="header-one">Find Your <span class="text-offset">Film</span></h1>
+        <button class="open-search" id="open-search">Search for <span class="text-offset">movies</span></button>
+    </header>
+    <div class="search-bar" id="search-bar">
+        <form id="search-form">
+            <fieldset class="search-fields">
+                <legend>Enter your <span class="text-offset">query</span></legend>
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" placeholder="Mickey 17">
+                <label for="year">Year</label>
+                <input type="text" id="year" name="year" placeholder="2025">
+                <button type="submit" class="search-button" id="search-button">Search</button>
+            </fieldset>
+        </form>
+    </div>
+    <div id="movie-list">
+
+    </div>
 </body>
-<script src="./script.js"></script>
+<script src="./script.js" type="module"></script>
 </html>
