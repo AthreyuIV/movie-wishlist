@@ -20,7 +20,7 @@ searchBtn.addEventListener('click', event => {
     let movieString = titleInput.value.replace(/ /g, "+");
     let yearString = titleInput.value.replace(/ /g, "+");
 
-    fetch(`http://www.omdbapi.com/?t=${movieString}&y=${yearString}&apikey=cf0edcf6&`)
+    fetch(`https://www.omdbapi.com/?t=${movieString}&y=${yearString}&apikey=cf0edcf6&`)
         .then(res => res.json())
         .then(data => {
             console.log(data)

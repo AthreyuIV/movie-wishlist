@@ -1,7 +1,7 @@
 export const renderListInitial = () => {
     const movieList = document.getElementById("movie-list");
 
-    fetch('http://www.omdbapi.com/?i=tt3896198&apikey=cf0edcf6&')
+    fetch('https://www.omdbapi.com/?i=tt3896198&apikey=cf0edcf6&')
         .then(res => res.json())
         .then(data => {
             console.log(data)
@@ -16,7 +16,7 @@ export const renderListInitial = () => {
         })
         .catch(err => console.error(err));
 
-    fetch('http://www.omdbapi.com/?t=mickey+17&y=2025&apikey=cf0edcf6&')
+    fetch('https://www.omdbapi.com/?t=mickey+17&y=2025&apikey=cf0edcf6&')
         .then(res => res.json())
         .then(data => {
             console.log(data)
@@ -29,7 +29,7 @@ export const renderListInitial = () => {
                 </section>
             `
         })
-    fetch('http://www.omdbapi.com/?t=demon+slayer&y=2025&apikey=cf0edcf6&')
+    fetch('https://www.omdbapi.com/?t=demon+slayer&y=2025&apikey=cf0edcf6&')
         .then(res => res.json())
         .then(data => {
             console.log(data)
